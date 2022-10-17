@@ -34,7 +34,7 @@ module.exports = {
                 network: "goerli",
                 chainId: 5,
                 urls: {
-                    apiURL: "http://api-goerli.etherscan.io/api",
+                    apiURL: `http://api-goerli.etherscan.io/${process.env.ETHERSCAN_API_KEY}`,
                     browserURL: "https://goerli.etherscan.io",
                 },
             },
